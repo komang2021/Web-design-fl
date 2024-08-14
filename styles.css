@@ -150,7 +150,13 @@ body {
     }
 }
 
-/* General styles for download card */
+.container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+}
 /* General styles for download card */
 .download-card {
     background-color: rgba(0, 0, 0, 0.6);
