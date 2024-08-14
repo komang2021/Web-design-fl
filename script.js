@@ -13,64 +13,35 @@ document.getElementById("fl-studio").addEventListener("click", function() {
         document.getElementById("fl-studio").scrollIntoView({ behavior: "smooth" });
 });
 
-// Play/Pause Functionality for Songs
-const playPauseButtons = document.querySelectorAll('.play-pause');
-const allAudios = document.querySelectorAll('audio');
-
-playPauseButtons.forEach(button => {
+// Category button functionality
+document.querySelectorAll('.category-btn').forEach(button => {
         button.addEventListener('click', () => {
-                const songId = button.getAttribute('data-song');
-                const audioElement = document.getElementById(songId);
-
-                // Pause any currently playing audio
-                allAudios.forEach(audio => {
-                        if (audio !== audioElement) {
-                                audio.pause();
-                                audio.currentTime = 0;
-                                const otherButton = document.querySelector(`button[data-song="${audio.id}"]`);
-                                otherButton.textContent = 'Play';
-                                otherButton.parentElement.classList.remove('playing');
-                        }
+                const category = button.getAttribute('data-category');
+                document.querySelectorAll('.download-list ul').forEach(list => {
+                        list.style.display = 'none';
                 });
-
-                // Toggle play/pause for the clicked button's audio
-                if (audioElement.paused) {
-                        audioElement.play();
-                        button.textContent = 'Pause';
-                        button.parentElement.classList.add('playing');
-                } else {
-                        audioElement.pause();
-                        button.textContent = 'Play';
-                        button.parentElement.classList.remove('playing');
-                }
+                document.querySelector(`ul[data-category="${category}"]`).style.display = 'block';
         });
 });
 
-// Category Selection for Song Preview
-const categoryButtons = document.querySelectorAll('.category-btn');
-const songLists = document.querySelectorAll('.song-list ul');
+// Download button animation
+document.querySelectorAll('.download-btn').forEach(button => {
+        button.addEventListener('click', (e) => {
+                e.preventDefault();
 
-categoryButtons.forEach(button => {
-        button.addEventListener('click', () => {
-                const category = button.getAttribute('data-category');
+                const link = button.href;
+                const icon = button.querySelector('i');
 
-                // Show the selected category's song list and hide others
-                songLists.forEach(list => {
-                        if (list.getAttribute('data-category') === category) {
-                                list.classList.add('active');
-                        } else {
-                                list.classList.remove('active');
-                        }
-                });
+                // Add a spinning animation to the icon
+                icon.classList.add('fa-spinner', 'fa-spin');
+                icon.classList.remove('fa-download');
 
-                // Reset all play buttons and stop any playing audio
-                playPauseButtons.forEach(btn => {
-                        btn.textContent = 'Play';
-                        btn.parentElement.classList.remove('playing');
-                });
-                allAudios.forEach(audio => {
-                        audio.pause();
-                        audio.currentTime = 0;
-                });
+                setTimeout(() => {
+                        window.open(link, '_blank');
+
+                        // Reset the icon after download starts
+                        icon.classList.remove('fa-spinner', 'fa-spin');
+                        icon.classList.add('fa-download');
+                }, 2000); // Delay to show the animation
         });
 });

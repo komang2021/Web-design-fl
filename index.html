@@ -43,55 +43,81 @@
             </div>
         </div>
     </section>
-
-    <div class="song-card">
-        <h2>Song List Download</h2>
-        <p>Download Juga Lagu Saya Disini Ok Ya Puhh</p>
-        <div class="song-categories">
-            <button class="category-btn" data-category="koplo">Koplo</button>
-            <button class="category-btn" data-category="funkot">Funkot</button>
-            <button class="category-btn" data-category="breakbeat">Breakbeat</button>
-            <button class="category-btn" data-category="instrumental">Instrumental</button>
+<div class="download-card">
+        <h2>List Download Lagu</h2>
+        <p class="p2">Download Juga Lagu Ku Yang Lain Ya Puh</p>
+        <div class="download-categories">
+                <button class="category-btn" data-category="koplo">Koplo</button>
+                <button class="category-btn" data-category="funkot">Funkot</button>
+                <button class="category-btn" data-category="breakbeat">Breakbeat</button>
+                <button class="category-btn" data-category="instrumental">Instrumental</button>
         </div>
-        <div class="song-list">
-            <ul data-category="koplo" class="active">
-                <li>
-                    <span>Girl und Panzer Katyusha Koplo Dangdut</span>
-                    <button class="play-pause" data-song="song1">Play</button>
-                    <audio id="song1" src="koplo/song1.mp3"></audio>
-                </li>
-                <li>
-                    <span>Hirasawa Yui Solo Guitar Vers Edit Koplo Gen 2</span>
-                    <button class="play-pause" data-song="song2">Play</button>
-                    <audio id="song2" src="koplo/song2.wav"></audio>
-                </li>
-            </ul>
-            <ul data-category="funkot">
-                <li>
-                    <span>Song Title 3</span>
-                    <button class="play-pause" data-song="song3">Play</button>
-                    <audio id="song3" src="funkot/song3.mp3"></audio>
-                </li>
-                <li>
-                    <span>Song Title 4</span>
-                    <button class="play-pause" data-song="song4">Play</button>
-                    <audio id="song4" src="funkot/song4.mp3"></audio>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <div class="download-list">
+                <!-- Koplo Links -->
+                <ul data-category="koplo" class="active">
+                        <li>
+                                <span>Judul Lagu Koplo 1</span>
+                                <a href="https://www.mediafire.com/file/koplo1" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                        <li>
+                                <span>Judul Lagu Koplo 2</span>
+                                <a href="https://www.mediafire.com/file/koplo2" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                </ul>
 
-    <section id="fl-studio" class="section fl-studio">
-        <div class="content">
-            <h1>FL Studio Samples</h1>
-            <p>Download sample FL Studio terbaik untuk produksi musik Anda.</p>
-            <div class="download-buttons">
-                <a href="#" class="btn">Download Sample Pack Koplo</a>
-                <a href="#" class="btn">Download Sample Pack Funkot</a>
-            </div>
-        </div>
-    </section>
+                <!-- Funkot Links -->
+                <ul data-category="funkot" style="display: none;">
+                        <li>
+                                <span>Judul Lagu Funkot 1</span>
+                                <a href="https://www.mediafire.com/file/funkot1" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                        <li>
+                                <span>Judul Lagu Funkot 2</span>
+                                <a href="https://www.mediafire.com/file/funkot2" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                </ul>
 
+                <!-- Breakbeat Links -->
+                <ul data-category="breakbeat" style="display: none;">
+                        <li>
+                                <span>Judul Lagu Breakbeat 1</span>
+                                <a href="https://www.mediafire.com/file/breakbeat1" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                        <li>
+                                <span>Judul Lagu Breakbeat 2</span>
+                                <a href="https://www.mediafire.com/file/breakbeat2" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                </ul>
+
+                <!-- Instrumental Links -->
+                <ul data-category="instrumental" style="display: none;">
+                        <li>
+                                <span>Judul Lagu Instrumental 1</span>
+                                <a href="https://www.mediafire.com/file/instrumental1" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                        <li>
+                                <span>Judul Lagu Instrumental 2</span>
+                                <a href="https://www.mediafire.com/file/instrumental2" class="download-btn" target="_blank">
+                                        <i class="fas fa-download"></i> Download
+                                </a>
+                        </li>
+                </ul>
+        </div>
+</div>
     <script src="script.js"></script>
 </body>
 </html>
