@@ -151,12 +151,13 @@ body {
 }
 
 .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
+
 /* General styles for download card */
 .download-card {
     background-color: rgba(0, 0, 0, 0.6);
@@ -183,86 +184,87 @@ body {
 }
 
 .download-card h2 {
-        text-align: center;
-        margin-bottom: 20px;
-        font-size: 24px;
-        color: #FF6347;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FF6347;
 }
 
 .p2 {
-       text-align: center;
-       margin-bottom: 20px;
-       font-size: 24px;
-       color: #FF6347; 
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #FF6347; 
 }
+
 /* Category buttons */
 .download-categories {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .category-btn {
-        background-color: #333;
-        color: #fff;
-        padding: 8px 12px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .category-btn:hover {
-        background-color: #FF6347;
+    background-color: #FF6347;
 }
 
 /* Download list styling */
 .download-list {
-        max-height: 300px;
-        overflow-y: auto;
+    max-height: 300px;
+    overflow-y: auto;
 }
 
 .download-list ul {
-        list-style-type: none;
-        padding: 0;
-        display: none;
+    list-style-type: none;
+    padding: 0;
+    display: none;
 }
 
 .download-list ul.active {
-        display: block;
+    display: block;
 }
 
 .download-list li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 15px;
-        padding: 10px;
-        border-bottom: 1px solid #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-bottom: 1px solid #444;
 }
 
 .download-list span {
-        font-size: 16px;
-        color: #fff;
+    font-size: 16px;
+    color: #fff;
 }
 
 .download-btn {
-        padding: 8px 16px;
-        background-color: #FF6347;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 14px;
-        transition: background-color 0.3s ease;
+    padding: 8px 16px;
+    background-color: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
 }
 
 .download-btn i {
-        margin-right: 5px;
+    margin-right: 5px;
 }
 
 .download-btn:hover {
-        background-color: #FF4500;
+    background-color: #FF4500;
 }
 
 /* FAQ Section */
@@ -347,21 +349,20 @@ body {
 
 /* Back to Top Button */
 .back-to-top-btn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #FF6347;
-        color: #fff;
-        padding: 10px 15px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        z-index: 100;
-        transition: background-color 0.3s ease;
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #FF6347;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 100;
+    transition: background-color 0.3s ease;
 }
 
 .back-to-top-btn:hover {
-        background-color: #FF4500;
+    background-color: #FF4500;
 }
-
