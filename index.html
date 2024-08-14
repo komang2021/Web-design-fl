@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INST2-RMX - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">INST2-RMX</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Hi, It's <span>INST2-RMX</span></h1>
+            <h2>I'm a Developer</h2>
+            <p>私は開発者です - Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div class="buttons">
+                <button id="fl-studio">Hire Me</button>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/komang2021"><i class="fab fa-github"></i></a>
+                <a href="https://www.whatsapp.com/081772857916"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <div class="song-card">
+        <h2>Song Previews</h2>
+        <p>Dengar Juga Lagu Saya Disini Ok Ya Puhh</p>
+        <div class="song-categories">
+            <button class="category-btn" data-category="koplo">Koplo</button>
+            <button class="category-btn" data-category="funkot">Funkot</button>
+            <button class="category-btn" data-category="breakbeat">Breakbeat</button>
+            <button class="category-btn" data-category="instrumental">Instrumental</button>
+        </div>
+        <div class="song-list">
+            <ul data-category="koplo" class="active">
+                <li>
+                    <span>Girl und Panzer Katyusha Koplo Dangdut</span>
+                    <button class="play-pause" data-song="song1">Play</button>
+                    <audio id="song1" src="koplo/song1.mp3"></audio>
+                </li>
+                <li>
+                    <span>Hirasawa Yui Solo Guitar Vers Edit Koplo Gen 2</span>
+                    <button class="play-pause" data-song="song2">Play</button>
+                    <audio id="song2" src="koplo/song2.wav"></audio>
+                </li>
+            </ul>
+            <ul data-category="funkot">
+                <li>
+                    <span>Song Title 3</span>
+                    <button class="play-pause" data-song="song3">Play</button>
+                    <audio id="song3" src="funkot/song3.mp3"></audio>
+                </li>
+                <li>
+                    <span>Song Title 4</span>
+                    <button class="play-pause" data-song="song4">Play</button>
+                    <audio id="song4" src="funkot/song4.mp3"></audio>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section id="fl-studio" class="section fl-studio">
+        <div class="content">
+            <h1>FL Studio Samples</h1>
+            <p>Download sample FL Studio terbaik untuk produksi musik Anda.</p>
+            <div class="download-buttons">
+                <a href="#" class="btn">Download Sample Pack Koplo</a>
+                <a href="#" class="btn">Download Sample Pack Funkot</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
