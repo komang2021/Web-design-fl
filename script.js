@@ -84,19 +84,3 @@ document.getElementById('backToTopBtn').addEventListener('click', function() {
 
 
 
-window.onload = function() {
-        // Tampilkan pop-up setelah 5 detik
-        setTimeout(function() {
-                document.getElementById('promo-popup').style.display = 'block';
-        }, 5000);
-
-        // Fungsi untuk menutup pop-up
-        document.querySelector('.close-popup').addEventListener('click', function() {
-                document.getElementById('promo-popup').style.display = 'none';
-        });
-
-        // Fungsi untuk menangani aksi pada tombol CTA
-        document.getElementById('cta-button').addEventListener('click', function() {
-                window.location.href = 'https://www.example.com/shop';
-        });
-}
