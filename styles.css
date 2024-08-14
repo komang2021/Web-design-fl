@@ -151,13 +151,29 @@ body {
 }
 
 /* General styles for download card */
+/* General styles for download card */
 .download-card {
-        background-color: rgba(0, 0, 0, 0.6);
-        border: 1px solid #444;
-        border-radius: 8px;
-        padding: 20px;
-        width: 495px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%; /* Biarkan kartu mengisi seluruh lebar kontainer */
+    max-width: 600px; /* Batasi lebar maksimal kartu */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 0 auto; /* Center kartu di layar */
+}
+
+/* Responsive styling */
+@media (min-width: 1024px) {
+    .download-card {
+        max-width: 800px; /* Maksimalkan lebar kartu pada layar yang lebih besar */
+    }
+}
+
+@media (min-width: 1440px) {
+    .download-card {
+        max-width: 1000px; /* Maksimalkan lebar kartu pada layar yang lebih besar */
+    }
 }
 
 .download-card h2 {
