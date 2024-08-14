@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+        <!-- Link ke CSS notifikasi di <head> -->
+        <link rel="stylesheet" href="notifikasi.css">
 </head>
 <body>
     <header>
@@ -53,6 +55,46 @@
                 <button class="category-btn" data-category="breakbeat">Breakbeat</button>
                 <button class="category-btn" data-category="instrumental">Instrumental</button>
         </div>
+<div class="faq-section">
+        <h2>FAQ (Frequently Asked Questions)</h2>
+        <div class="faq-item">
+                <span class="faq-icon" data-target="#faq1">❓</span>
+                <p>Cara Mendownload Lagu</p>
+        </div>
+        <div class="faq-item">
+                <span class="faq-icon" data-target="#faq2">❓</span>
+                <p>Apakah Saya Perlu Membayar untuk Mengunduh?</p>
+        </div>
+        <div class="faq-item">
+                <span class="faq-icon" data-target="#faq3">❓</span>
+                <p>Bagaimana Cara Mendapatkan Akses VIP?</p>
+        </div>
+</div>
+
+<!-- Pop-up Modal -->
+<div id="faq1" class="modal">
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Cara Mendownload Lagu</h3>
+                <p>Klik tombol download di sebelah judul lagu, dan link akan membawa Anda ke halaman download MediaFire. Pastikan Anda mengikuti instruksi di halaman tersebut untuk menyelesaikan proses download.</p>
+        </div>
+</div>
+
+<div id="faq2" class="modal">
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Apakah Saya Perlu Membayar untuk Mengunduh?</h3>
+                <p>Tidak, semua lagu yang disediakan di halaman ini dapat diunduh secara gratis. Jika ada yang meminta pembayaran, pastikan Anda berada di halaman yang benar.</p>
+        </div>
+</div>
+
+<div id="faq3" class="modal">
+        <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Bagaimana Cara Mendapatkan Akses VIP?</h3>
+                <p>Anda bisa mendapatkan akses VIP gratis selama 1 bulan dengan mendownload 10 lagu atau lebih dari situs ini. Promo ini berlaku untuk waktu yang terbatas, jadi jangan lewatkan kesempatan ini!</p>
+        </div>
+</div>
         <div class="download-list">
                 <!-- Koplo Links -->
                 <ul data-category="koplo" class="active">
@@ -68,6 +110,12 @@
                                         <i class="fas fa-download"></i> Download
                                 </a>
                         </li>
+                 <li>
+                         <span>Judul Lagu Koplo 3</span>
+                         <a href="https://www.mediafire.com/file/koplo2" class="download-btn" target="_blank">
+                                 <i class="fas fa-download"></i> Download
+                         </a>
+                 </li>
                 </ul>
 
                 <!-- Funkot Links -->
@@ -120,6 +168,29 @@
         </div>
 </div> 
 </div>
+
+<!-- promo Pop-up Modal -->
+<div id="promo-popup" class="promo-popup">
+        <div class="promo-content">
+                <span class="close-popup">&times;</span>
+                <h2>Special Offer!</h2>
+                <p>Get 20% off on your first purchase. Use code: FIRST20</p>
+                <button id="cta-button">Shop Now</button>
+        </div>
+</div>
+
+<!-- Notifikasi Untuk update Lagu dan link terbaru -->
+<!-- Tambahkan di dalam <body> sebelum tag </body> -->
+<div id="notification" class="notification" style="display:none;">
+        <p id="notification-message"></p>
+        <span id="notification-close" class="notification-close">&times;</span>
+</div>
+<!-- Notifikasi Untuk update Lagu dan link terbaru -->
+
+<button id="backToTopBtn" class="back-to-top-btn">back</button>
     <script src="script.js"></script>
+
+<!-- Link ke JavaScript notifikasi di akhir <body> -->
+<script src="notifikasi.js"></script>
 </body>
 </html>

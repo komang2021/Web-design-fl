@@ -1,0 +1,12 @@
+[
+        {
+                "date": "2024-08-15T12:00:00Z",
+                "message": "Lagu baru telah ditambahkan! Klik di sini untuk mendengarkan.",
+                "url": "link-to-new-song"
+    },
+        {
+                "date": "2024-08-14T12:00:00Z",
+                "message": "Jangan lewatkan promo spesial kami!",
+                "url": "link-to-promo"
+    }
+]

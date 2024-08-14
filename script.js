@@ -45,3 +45,58 @@ document.querySelectorAll('.download-btn').forEach(button => {
                 }, 2000); // Delay to show the animation
         });
 });
+
+// JavaScript untuk modal FAQ
+document.querySelectorAll('.faq-icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+                const modalId = icon.getAttribute('data-target');
+                document.querySelector(modalId).style.display = 'block';
+        });
+});
+
+// Tutup modal ketika pengguna mengklik tombol close
+document.querySelectorAll('.close').forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+                closeBtn.parentElement.parentElement.style.display = 'none';
+        });
+});
+
+// Tutup modal ketika pengguna mengklik di luar konten modal
+window.addEventListener('click', (event) => {
+        if (event.target.classList.contains('modal')) {
+                event.target.style.display = 'none';
+        }
+});
+
+// Back to Top Button Functionality
+window.onscroll = function() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById('backToTopBtn').style.display = 'block';
+        } else {
+                document.getElementById('backToTopBtn').style.display = 'none';
+        }
+};
+
+document.getElementById('backToTopBtn').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+});
+
+
+
+window.onload = function() {
+        // Tampilkan pop-up setelah 5 detik
+        setTimeout(function() {
+                document.getElementById('promo-popup').style.display = 'block';
+        }, 5000);
+
+        // Fungsi untuk menutup pop-up
+        document.querySelector('.close-popup').addEventListener('click', function() {
+                document.getElementById('promo-popup').style.display = 'none';
+        });
+
+        // Fungsi untuk menangani aksi pada tombol CTA
+        document.getElementById('cta-button').addEventListener('click', function() {
+                window.location.href = 'https://www.example.com/shop';
+        });
+}
