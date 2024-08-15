@@ -97,6 +97,20 @@ document.addEventListener('DOMContentLoaded', () => {
             const audioId = button.getAttribute('data-audio');
             const audioElement = document.getElementById(audioId);
 
+            // Pause all other audio elements
+            document.querySelectorAll('audio').forEach(audio => {
+                if (audio !== audioElement) {
+                    audio.pause();
+                    // Reset button text for other audio elements
+                    const otherButton = document.querySelector(`button[data-audio="${audio.id}"]`);
+                    if (otherButton) {
+                        otherButton.classList.remove('playing');
+                        otherButton.innerHTML = '<i class="fas fa-play"></i> Play';
+                    }
+                }
+            });
+
+            // Toggle play/pause for the selected audio
             if (audioElement.paused) {
                 audioElement.play();
                 button.classList.add('playing');
