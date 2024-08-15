@@ -114,3 +114,17 @@ document.querySelectorAll('.play-btn').forEach(button => {
         }
     });
 });
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+        var playButtons = document.querySelectorAll('.play-btn');
+
+        playButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                        var audioId = this.getAttribute('data-audio');
+                        var audioElement = document.getElementById(audioId);
+                        audioElement.play(); // Langsung memutar audio
+                });
+        });
+});
