@@ -38,6 +38,7 @@ body {
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
+    padding-left: 20px;
 }
 
 .nav-links a:hover {
@@ -83,12 +84,20 @@ body {
 .home-content h2 {
     font-size: 30px;
     margin-bottom: 20px;
+      color: transparent; /* Bikin teks transparan */
+  -webkit-text-stroke: 1px white; /* Stroke putih tipis */
+  text-shadow: 
+    1px 1px 2px black; /* Tambahkan bayangan */
 }
 
 .home-content p {
     font-size: 18px;
     margin-bottom: 30px;
     font-weight: 300;
+      color: transparent; /* Bikin teks transparan */
+  -webkit-text-stroke: 0.7px white; /* Stroke putih tipis */
+  text-shadow: 
+    1px 1px 2px black; /* Tambahkan bayangan */
 }
 
 .home-content span {
@@ -156,6 +165,10 @@ body {
     align-items: center;
     padding: 20px;
     width: 100%;
+      color: transparent; /* Bikin teks transparan */
+  -webkit-text-stroke: 0.7px white; /* Stroke putih tipis */
+  text-shadow: 
+    1px 1px 2px black; /* Tambahkan bayangan */
 }
 
 /* General styles for download card */
@@ -198,6 +211,10 @@ body {
    font-size: 20px;
    color: #FF6347;
    font-weight: bold;
+     color: transparent; /* Bikin teks transparan */
+  -webkit-text-stroke: 1px white; /* Stroke putih tipis */
+  text-shadow: 
+    1px 1px 2px black; /* Tambahkan bayangan */
 }
 
 .download-categories {
